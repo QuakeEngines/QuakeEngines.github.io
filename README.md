@@ -1,3 +1,3 @@
 # QuakeEngines.github.io
 Structured List of Quake Engines
-View as web page: QuakeEngines.github.io
+View as web page: http://QuakeEngines.github.io
