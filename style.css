@@ -61,16 +61,16 @@ h3 {
 }
 
 ::-webkit-scrollbar {
-  background-color: #353637;
+  background-color: #353637 !important;
   color: #b4b1ab;
 }
 
 ::-webkit-scrollbar-corner {
-  background-color: #323334;
+  background-color: #323334 !important;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #3f4142;
+  background-color: #3f4142 !important;
 }
 
 ::selection {
