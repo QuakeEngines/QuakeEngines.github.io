@@ -1,0 +1,109 @@
+body {
+  color: rgb(190, 190, 190);
+  background-color: rgb(40, 40, 40);
+  font-family: Segoe UI, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height-step: 1.5;
+  margin: 0px;
+}
+
+div {
+  margin: auto;
+  max-width: 700px;
+}
+
+.footer {
+  min-height: 80px;
+}
+
+a {
+  color: rgb(90, 161, 222);
+}
+
+p {
+  margin-top: 6px;
+}
+
+span {
+  margin-top: 0px;
+}
+
+span a,
+.grey {
+  color: rgb(190, 190, 190);
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 40px;
+  margin-top: 0px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+
+h3 {
+
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 28px;
+  margin-bottom: 8px;
+
+}
+
+.subtext {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+::-webkit-scrollbar {
+  background-color: #353637;
+  color: #b4b1ab;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #323334;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3f4142;
+}
+
+::selection {
+  background-color: #2065b9;
+  color: #dfdfdf;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted rgb(190, 190, 190);
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  min-width: 140px;
+  background-color: rgb(30, 30, 30);
+  text-align: left;
+  padding: 5px 24px;
+  border-radius: 6px;
+
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

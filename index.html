@@ -1,174 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- items to add to this list: 
+  id-Software/quake
+  id-Software/Quake-Tools
+  id-Software/Quake-2
+  id-Software/Quake-2-Tools
+  QuakeEngines/GtkRadiant-original
+  QuakeEngines/RTCW-MP
+  QuakeEngines/rehlds
+
+  sort out:
+  link on original https://github.com/id-Software/Enemy-Territory (ETe)
+  link on original id-Software/Quake-III-Arena (ioq3)
+  link on original id-Software/RTCW-SP (Justasic/RTCW-SP)
+
+  items to add to github:
+  Shpoike/Quakespasm (as separate branch)
+
+-->
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quake Engines List</title>
-  <style type="text/css">
-    body {
-      color: rgb(179, 175, 169);
-      background-color: rgb(50, 51, 52);
-      font-family: Segoe UI, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      line-height-step: 1.5;
-    }
-
-    div {
-      margin: auto;
-      max-width: 700px;
-    }
-
-    a {
-      color: rgb(90, 161, 222);
-    }
-
-    p {
-      margin-top: 6px;
-    }
-
-    span {
-      margin-top: 0px;
-    }
-
-    span a,
-    .grey {
-      color: rgb(179, 175, 169);
-    }
-
-    h1 {
-      font-weight: 600;
-      font-size: 40px;
-    }
-
-    h2 {
-      font-weight: 600;
-      font-size: 30px;
-      margin-top: 30px;
-      margin-bottom: 8px;
-    }
-
-    h3 {
-
-      font-weight: 600;
-      font-size: 20px;
-      margin-top: 28px;
-      margin-bottom: 8px;
-
-    }
-
-    .subtext {
-      font-size: 12px;
-      font-weight: normal;
-    }
-
-    ::-webkit-scrollbar {
-      background-color: #353637;
-      color: #b4b1ab;
-    }
-
-    ::-webkit-scrollbar-corner {
-      background-color: #323334;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background-color: #3f4142;
-    }
-
-    ::selection {
-      background-color: #2065b9;
-      color: #dfdfdf;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+
 
   <div>
     <h1>The Big List of Quake Engines</h1>
     <p style="font-size: 12px;">Web page: <b><a href="https://QuakeEngines.github.io"
           class="grey">QuakeEngines.github.io</a></b> /
       Github repo with this page: <b><a href="https://github.com/QuakeEngines/QuakeEngines.github.io"
-          class="grey">github</a></b> / Total items: <b>64</b> /
-      Last update: <b>2020-02-20</b>
+          class="grey">github</a></b> / Total items: <span class="tooltip"><b>64</b>
+        <!-- <b>64</b>
+        <span class="tooltiptext">Github counts 2 more: <br>1 - repo with this page, <br>2 - KMQuake2 has 2 forks
+        </span></span>  -->
+        / Last update: <b>2020-02-20</b>
     </p>
 
     <p>This is list of github repositories of idTech engines, it's derivatives and sourceports. It also includes repos
       of some of the games and mods based on Quake and Quake-related engines. This is not a complete list, and it is
       gradually expanding and updating. There are mirrors of included repos on github.com/QuakeEngines made for
-      archiving purposes. They are periodically updated by "merge and rebase" with their original source repos. </p>
+      archiving purposes. They are periodically updated by "merge and rebase" with their original source repos.<br>
+      Please post your suggestions and fixes on gihub
+      <a href="https://github.com/QuakeEngines/QuakeEngines.github.io/issues" class="grey">issues</a> page or in the
+      <a href="#comments" class="grey">comments</a> section below.</p>
     <hr>
 
 
 
-
-
-
-
-
-
-
-
-    <h2>Quake 1 engines:</h2>
+    <h2>Quake 1:</h2>
 
 
     <h3><a href="https://github.com/ericwa/Quakespasm">Quakespasm</a> [ericwa/Quakespasm]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/Quakespasm">QuakeEngines</a>,
-      <a href="https://github.com/ericwa/Quakespasm/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#ericwa/Quakespasm">Other forks</a></span><br>
+    <span class="subtext">Discord channels related to Quake modding: <a href="https://discord.gg/f5Y99aM">Quake
+        Mapping</a>,
+      <a href="https://discord.gg/NJ8sKQf">Terrafusion</a>,
+      <a href="https://discord.gg/XaAuJVz">TrenchBroom</a>
+    </span>
     <p>unofficial mirror of QuakeSpasm SVN with branches for stuff I'm working on</p>
+
 
     <h3><a href="https://github.com/Novum/vkQuake">vkQuake</a> [Novum/vkQuake]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/vkQuake">QuakeEngines</a>,
-      <a href="https://github.com/Novum/vkQuake/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#Novum/vkQuake">Other forks</a></span>
     <p>Vulkan Quake port based on QuakeSpasm</p>
 
+
+    <h3><a href="https://sourceforge.net/p/fteqw/code/HEAD/tree/trunk/">FTE</a> @sourceforge [fteqw]</h3>
+    <span class="subtext">Unofficial mirror on github:
+      <a href="https://github.com/QuakeEngines/FTE-clone">QuakeEngines/FTE-clone</a></span><br>
+    <span class=" subtext">Official website: <a href="http://fte.triptohell.info/">fte.triptohell.info</a></span>
+    <p>FTE QuakeWorld is a QuakeWorld derivative which mainly focuses on modding and additional features for both users
+      and servers. Supports NetQuake gamecode and protocol, Hexen 2/Quake 2/Quake 3 maps and models, many QuakeC builtin
+      extensions, and more.</p>
+
+
+    <h3><a href="http://quakeone.com/markv/builds/">Mark_V</a> @quakeone.com</h3>
+    <span class="subtext">Unofficial mirror on github:
+      <a href="https://github.com/QuakeEngines/Mark_V-clone">QuakeEngines/Mark_V-clone</a></span><br>
+    <span class="subtext">Official website: <a href="http://quakeone.com/markv/">quakeone.com/markv</a></span>
+    <p>Classic Quake engine derived from FitzQuake, also has a software renderer (WinQuake version). Does many things
+      and tries to do each of them very well.</p>
+
+
+    <h3><a href="https://github.com/xonotic/darkplaces">darkplaces</a> [xonotic/darkplaces]</h3>
+    <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/darkplaces">QuakeEngines</a>,
+      <a href="https://techgaun.github.io/active-forks/index.html#xonotic/darkplaces">Other forks</a></span><br>
+    <span class="subtext">Official website:
+      <a href="https://icculus.org/twilight/darkplaces/">icculus.org/twilight/darkplaces</a></span>
+    <p>Mirror of https://gitlab.com/xonotic/darkplaces - The Quake engine that powers Xonotic https://xonotic.org</p>
+
+
+    <h3><a href="https://github.com/qbism/super8">super8</a> [qbism/super8]</h3>
+    <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/super8">QuakeEngines</a>,
+      <a href="https://techgaun.github.io/active-forks/index.html#qbism/super8">Other forks</a></span><br>
+    <span class="subtext">Official website: <a href="http://super8.qbism.com/">super8.qbism.com</a></span>
+    <p>qbism super8 engine based on Makaqu and Quake source code</p>
 
 
     <h3><a href="https://github.com/klaussilveira/qengine">qengine</a> [klaussilveira/qengine]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/qengine">QuakeEngines</a>,
-      <a href="https://github.com/klaussilveira/qengine/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#klaussilveira/qengine">Other forks</a></span>
     <p>Retro game engine for developers that enjoy creating games like it's 1997.</p>
+
+
+    <h3><a href="https://github.com/adolfintel/ChadQuake">ChadQuake</a> [adolfintel/ChadQuak]</h3>
+    <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/ChadQuake">QuakeEngines</a>,
+      <a href="https://techgaun.github.io/active-forks/index.html#adolfintel/ChadQuake">Other forks</a></span>
+    <p>Fork of Mark V WinQuake</p>
+
+
+    <h3><a href="https://github.com/xonotic/xonotic">xonotic</a> [xonotic/xonotic]</h3>
+    <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/xonotic">QuakeEngines</a>,
+      <a href="https://techgaun.github.io/active-forks/index.html#xonotic/xonotic">Other forks</a></span><br>
+    <span class="subtext">Official website: <a href="https://xonotic.org/">xonotic.org</a> /
+      Official Discord channel: <a href="https://discord.gg/0uxcsw1XMkaOB936">Xonotic</a></span>
+    <p>Mirror of https://gitlab.com/xonotic - Xonotic (superproject containing build scripts and tools to download
+      other repositories and assets)</p>
+
+
+
+
 
 
 
     <hr>
-    <h2>Quake 2 engines:</h2>
+    <h2>Quake 2:</h2>
 
     <h3><a href="https://github.com/yquake2/yquake2">yquake2</a> [yquake2/yquake2]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/yquake2">QuakeEngines</a>,
-      <a href="https://github.com/yquake2/yquake2/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#yquake2/yquake2">Other forks</a></span><br>
+    <span class="subtext">Official website: <a href="https://www.yamagi.org/quake2">yamagi.org/quake2</a></span>
     <p>The Yamagi Quake II client</p>
+
+
+    <h3><a href="http://www.markshan.com/knightmare/downloads.htm">KMQuake2</a> @markshan.com/knightmare</h3>
+    <span class="subtext">Forks: <a href="https://github.com/mczero80/KMQuake2">mczero80/KMQuake2</a>,
+      <a href="https://github.com/m-x-d/KMQuake2">m-x-d/KMQuake2</a></span><br>
+    <span class="subtext">Mirrors:
+      <a href="https://github.com/QuakeEngines/KMQuake2-mczero80">QuakeEngines/KMQuake2-mczero80</a>,
+      <a href="https://github.com/QuakeEngines/KMQuake2-mxd">QuakeEngines/KMQuake2-mxd</a>,
+      <a href="https://techgaun.github.io/active-forks/index.html#mczero80/KMQuake2">Other forks</a></span><br>
+    <span class="subtext">Official website: <a
+        href="http://www.markshan.com/knightmare">markshan.com/knightmare</a></span>
+    <p>KMQuake 2 is a Quake 2 Source port created by Knightmare. The goal of the sourceport was to add more limits for
+      mappers to use in their custom maps. Along with that, the source port has also many new rendering effects such as
+      shadows, dynamic lights, high-res texture support, improved interface, and more features.</p>
+
+
+    <h3><a href="https://sourceforge.net/p/quake2xp/code/HEAD/tree/branch/trunk/">quake2xp</a> @sourceforge [quake2xp]
+    </h3>
+    <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/quake2xp">QuakeEngines/quake2xp</a>,
+      <a href="https://github.com/thro/quake2xp">thro/quake2xp</a></span>
+    <p>QuakeIIxp is a multi-platform (windows, linux and freeBSD (experemental)) graphics port of the game Quake II
+      developed by Id Software. Completely updated rendering takes full advantage of the latest graphics cards to get
+      the perfect picture, preserving the original style of the game.</p>
+
 
     <h3><a href="https://github.com/skullernet/q2pro">q2pro</a> [skullernet/q2pro]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/q2pro">QuakeEngines</a>,
-      <a href="https://github.com/skullernet/q2pro/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#skullernet/q2pro">Other forks</a></span>
     <p>Enhanced Quake 2 client and server focused on multiplayer</p>
+
 
     <h3><a href="https://github.com/kondrak/vkQuake2">vkQuake2</a> [kondrak/vkQuake2]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/vkQuake2">QuakeEngines</a>,
-      <a href="https://github.com/kondrak/vkQuake2/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#kondrak/vkQuake2">Other forks</a></span>
     <p>id Software's Quake 2 v3.21 with mission packs and Vulkan support (Windows, Linux, MacOS)</p>
 
 
     <h3><a href="https://github.com/jdolan/quetoo">quetoo</a> [jdolan/quetoo]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/quetoo">QuakeEngines</a>,
-      <a href="https://github.com/jdolan/quetoo/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#jdolan/quetoo">Other forks</a></span><br>
+    <span class="subtext">Official website: <a href="http://quetoo.org/">Quetoo.org</a> /
+      Official Discord channel: <a href="https://discord.gg/unb9U4b">Quetoo.org</a></span>
     <p>Quetoo ("Q2") is a free first person shooter based on id Tech2. GPL v2 license.</p>
 
 
     <h3><a href="https://github.com/jdolan/quetoo-data">quetoo-data</a> [jdolan/quetoo-data]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/quetoo-data">QuakeEngines</a>,
-      <a href="https://github.com/jdolan/quetoo-data/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#jdolan/quetoo-data">Other forks</a></span>
     <p>Quetoo ("Q2") game data. Creative Commons Attribution license.</p>
+
 
     <h3><a href="https://github.com/coltongit/iqq2">iqq2</a> [coltongit/iqq2]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/iqq2">QuakeEngines</a>,
-      <a href="https://github.com/coltongit/iqq2/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#coltongit/iqq2">Other forks</a></span>
     <p>A fan continuation of support for the original Quake 2 - updated to 3.21</p>
+
 
     <h3><a href="https://github.com/raynorpat/cake">cake</a> [raynorpat/cake]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/cake">QuakeEngines</a>,
-      <a href="https://github.com/raynorpat/cake/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#raynorpat/cake">Other forks</a></span>
     <p>A portable and advanced Quake 2 engine base for mods to build upon</p>
 
 
@@ -180,92 +209,97 @@
 
 
     <hr>
-    <h2>Quake 3 engines:</h2>
+    <h2>Quake 3:</h2>
 
-    <h3><a href="https://github.com/ioquake/ioq3">ioq3</a> [ioquake/ioq3]</h3>
+    <h3><a href="https://github.com/ioquake/ioq3">ioquake3</a> [ioquake/ioq3]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/ioq3">QuakeEngines</a>,
-      <a href="https://github.com/ioquake/ioq3/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#ioquake/ioq3">Other forks</a></span><br>
+    <span class="subtext">Official website: <a href="https://ioquake3.org/">ioquake3.org</a> /
+      Official Discord channel: <a href="https://discord.gg/qU2EjG">Nuclear Monster</a></span>
     <p>The ioquake3 community effort to continue supporting/developing id's Quake III Arena https://www.ioquake3.org/
     </p>
 
+
     <h3><a href="https://github.com/jpcy/ioq3-premake-msvc">ioq3-premake-msvc</a> [jpcy/ioq3-premake-msvc]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/ioq3-premake-msvc">QuakeEngines</a>,
-      <a href="https://github.com/jpcy/ioq3-premake-msvc/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#jpcy/ioq3-premake-msvc">Other forks</a></span>
     <p>A Premake script for generating Visual Studio projects for ioquake3</p>
 
 
     <h3><a href="https://github.com/ec-/Quake3e">Quake3e</a> [ec-/Quake3e]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/Quake3e">QuakeEngines</a>,
-      <a href="https://github.com/ec-/Quake3e/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#ec-/Quake3e">Other forks</a></span><br>
+    <span class="subtext">Official Discord channel: <a href="https://discord.gg/X3Exs4C">edawn</a></span>
     <p>Improved Quake III Arena engine</p>
+
 
     <h3><a href="https://github.com/DaemonEngine/Daemon">Daemon</a> [DaemonEngine/Daemon]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/Daemon">QuakeEngines</a>,
-      <a href="https://github.com/DaemonEngine/Daemon/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#DaemonEngine/Daemon">Other forks</a></span><br>
+    <span class="subtext">Official Discord channel: <a href="https://discord.gg/pHwf5K2">Unvanquished</a></span>
     <p>The Dæmon game engine. With some bits of ioq3 and XreaL.</p>
 
 
 
     <h3><a href="https://github.com/zturtleman/spearmint">spearmint</a> [zturtleman/spearmint]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/spearmint">QuakeEngines</a>,
-      <a href="https://github.com/zturtleman/spearmint/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#zturtleman/spearmint">Other forks</a></span><br>
+    <span class="subtext">Official website: <a href="https://clover.moe/spearmint/">clover.moe/spearmint</a> /
+      Official Discord channel: <a href="https://discord.gg/RAdK2yv">Fragmint★Wonderland</a></span>
     <p>Spearmint, an updated id Tech 3 engine for continuing the classics and creating new games.</p>
 
 
 
     <h3><a href="https://github.com/ec-/ioqw-ec-game">ioqw-ec-game</a> [ec-/ioqw-ec-game]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/ioqw-ec-game">QuakeEngines</a>,
-      <a href="https://github.com/ec-/ioqw-ec-game/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#ec-/ioqw-ec-game">Other forks</a></span>
     <p>Unofficial Quake III Arena gamecode patch</p>
 
 
     <h3><a href="https://github.com/coltongit/dxquake3">dxquake3</a> [coltongit/dxquake3]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/dxquake3">QuakeEngines</a>,
-      <a href="https://github.com/coltongit/dxquake3/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#coltongit/dxquake3">Other forks</a></span>
     <p>DXQuake3, a Quake III engine in DirectX by Richard Geary</p>
 
 
     <h3><a href="https://github.com/KuehnhammerTobias/ioqw">ioqw</a> [KuehnhammerTobias/ioqw]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/ioqw">QuakeEngines</a>,
-      <a href="https://github.com/KuehnhammerTobias/ioqw/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#KuehnhammerTobias/ioqw">Other forks</a></span>
     <p>An updated id Tech 3 game, based on Zack Middleton's Spearmint engine.</p>
 
 
 
     <h3><a href="https://github.com/raynorpat/xreal">xreal</a> [raynorpat/xreal]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/xreal">QuakeEngines</a>,
-      <a href="https://github.com/raynorpat/xreal/network/members">Other forks</a></span>
-    <p></p>
+      <a href="https://techgaun.github.io/active-forks/index.html#raynorpat/xreal">Other forks</a></span>
+    <p>XreaL is a heavily improved Quake 3 Arena engine. It's bundled with new tools and a demo game that was never
+      finished. </p>
+
 
     <h3><a href="https://github.com/Unvanquished/Unvanquished">Unvanquished</a> [Unvanquished/Unvanquished]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/Unvanquished">QuakeEngines</a>,
-      <a href="https://github.com/Unvanquished/Unvanquished/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#Unvanquished/Unvanquished">Other forks</a></span><br>
+    <span class="subtext">Official website: <a href="https://unvanquished.net/">unvanquished.net</a> /
+      Official Discord channel: <a href="https://discord.gg/pHwf5K2">Unvanquished</a></span>
     <p>An FPS/RTS hybrid game powered by the Daemon engine (a combination of ioq3 and XreaL)</p>
 
 
     <h3><a href="https://github.com/jswigart/omni-bot">omni-bot</a> [jswigart/omni-bot]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/omni-bot">QuakeEngines</a>,
-      <a href="https://github.com/jswigart/omni-bot/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#jswigart/omni-bot">Other forks</a></span>
     <p>Omni-bot is a first person shooter bot frameworkfor AI controlled multiplayer opponents in several popular FPS
-      games
-      and engines</p>
-
-    <h3><a href="https://github.com/xonotic/xonotic">xonotic</a> [xonotic/xonotic]</h3>
-    <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/xonotic">QuakeEngines</a>,
-      <a href="https://github.com/xonotic/xonotic/network/members">Other forks</a></span>
-    <p>Mirror of https://gitlab.com/xonotic - Xonotic (superproject containing build scripts and tools to download other
-      repositories and assets)</p>
+      games and engines</p>
 
 
     <h3><a href="https://github.com/zturtleman/mint-arena">mint-arena</a> [zturtleman/mint-arena]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/mint-arena">QuakeEngines</a>,
-      <a href="https://github.com/zturtleman/mint-arena/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#zturtleman/mint-arena">Other forks</a></span>
     <p>Spearmint Quake 3 and Team Arena game code.</p>
 
 
     <h3><a href="https://github.com/pbrochart/oaunofficial">oaunofficial</a> [pbrochart/oaunofficial]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/oaunofficial">QuakeEngines</a>,
-      <a href="https://github.com/pbrochart/oaunofficial/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#pbrochart/oaunofficial">Other forks</a></span>
     <p>Aftershock Mod for Openarena</p>
 
 
@@ -273,14 +307,15 @@
       [kennyalive/Quake-III-Arena-Kenny-Edition]</h3>
     <span class="subtext">Mirrors: <a
         href="https://github.com/QuakeEngines/Quake-III-Arena-Kenny-Edition">QuakeEngines</a>,
-      <a href="https://github.com/kennyalive/Quake-III-Arena-Kenny-Edition/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#kennyalive/Quake-III-Arena-Kenny-Edition">Other
+        forks</a></span>
     <p>The cradle of Quake III Arena</p>
 
 
 
     <h3><a href="https://github.com/coltongit/ioq3ztm">ioq3ztm</a> [coltongit/ioq3ztm]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/ioq3ztm">QuakeEngines</a>,
-      <a href="https://github.com/coltongit/ioq3ztm/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#coltongit/ioq3ztm">Other forks</a></span>
     <p>Automatically exported from code.google.com/p/ioq3ztm for archive purposes. See zturtleman/spearmint for active
       project.</p>
 
@@ -288,46 +323,43 @@
     <h3><a href="https://github.com/zturtleman/spearmint-patch-data">spearmint-patch-data</a>
       [zturtleman/spearmint-patch-data]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/spearmint-patch-data">QuakeEngines</a>,
-      <a href="https://github.com/zturtleman/spearmint-patch-data/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#zturtleman/spearmint-patch-data">Other
+        forks</a></span>
     <p>Game patch data for Spearmint.</p>
 
 
 
     <h3><a href="https://github.com/KuehnhammerTobias/qio">qio</a> [KuehnhammerTobias/qio]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/qio">QuakeEngines</a>,
-      <a href="https://github.com/KuehnhammerTobias/qio/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#KuehnhammerTobias/qio">Other forks</a></span>
     <p>An umodified copy of the Qio source code (by Vodin).</p>
 
-
-
-    <h3><a href="https://github.com/tankorsmash/quadcow">quadcow</a> [tankorsmash/quadcow]</h3>
-    <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/quadcow">QuakeEngines</a>,
-      <a href="https://github.com/tankorsmash/quadcow/network/members">Other forks</a></span>
-    <p>Unofficial Github host for the recently open source Quadrilateral Cowboy</p>
 
 
     <h3><a href="https://github.com/coltongit/mint-arena-you-will-never-win">mint-arena-you-will-never-win</a>
       [coltongit/mint-arena-you-will-never-win]</h3>
     <span class="subtext">Mirrors: <a
         href="https://github.com/QuakeEngines/mint-arena-you-will-never-win">QuakeEngines</a>,
-      <a href="https://github.com/coltongit/mint-arena-you-will-never-win/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#coltongit/mint-arena-you-will-never-win">Other
+        forks</a></span>
     <p></p>
 
     <h3><a href="https://github.com/coltongit/3wctf">3wctf</a> [coltongit/3wctf]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/3wctf">QuakeEngines</a>,
-      <a href="https://github.com/coltongit/3wctf/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#coltongit/3wctf">Other forks</a></span>
     <p>3 team/way CTF mod for Spearmint</p>
 
 
     <h3><a href="https://github.com/zturtleman/quakeconstruct">quakeconstruct</a> [zturtleman/quakeconstruct]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/quakeconstruct">QuakeEngines</a>,
-      <a href="https://github.com/zturtleman/quakeconstruct/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#zturtleman/quakeconstruct">Other forks</a></span>
     <p>Automatically exported from code.google.com/p/quakeconstruct for archive purposes. I do not maintain it. Don't
       report issues here.</p>
 
+
     <h3><a href="https://github.com/raynorpat/cake3">cake3</a> [raynorpat/cake3]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/cake3">QuakeEngines</a>,
-      <a href="https://github.com/raynorpat/cake3/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#raynorpat/cake3">Other forks</a></span>
     <p>XreaL based cleanup project</p>
 
 
@@ -336,119 +368,144 @@
 
 
     <hr>
-    <h2>RtCW / ET engines:</h2>
+    <h2>RtCW / ET:</h2>
 
-
+    https://www.etlegacy.com/
     <h3><a href="https://github.com/etlegacy/etlegacy">etlegacy</a> [etlegacy/etlegacy]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/etlegacy">QuakeEngines</a>,
-      <a href="https://github.com/etlegacy/etlegacy/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#etlegacy/etlegacy">Other forks</a></span><br>
+    <span class="subtext">Official website: <a href="https://www.etlegacy.com/">etlegacy.com</a> /
+      Official Discord channel: <a href="https://discord.gg/UBAZFys">ET:Legacy</a></span>
     <p>ET: Legacy is based on the source code of the Wolfenstein: Enemy Territory which was released under the GPLv3
-      license.
-      The main goal of this project is to fix bugs, remove old dependencies and make…</p>
+      license. The main goal of this project is to fix bugs, remove old dependencies and make…</p>
 
 
     <h3><a href="https://github.com/etfdevs/ETe">ETe</a> [etfdevs/ETe]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/ETe">QuakeEngines</a>,
-      <a href="https://github.com/etfdevs/ETe/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#etfdevs/ETe">Other forks</a></span>
     <p>Improved Wolfenstein: Enemy Territory Engine</p>
 
 
     <h3><a href="https://github.com/iortcw/iortcw">iortcw</a> [iortcw/iortcw]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/iortcw">QuakeEngines</a>,
-      <a href="https://github.com/iortcw/iortcw/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#iortcw/iortcw">Other forks</a></span>
     <p>Merge of ioquake3 features and fixes into RTCW code bases</p>
 
 
     <h3><a href="https://github.com/Justasic/RTCW-SP">RTCW-SP</a> [Justasic/RTCW-SP]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/RTCW-SP">QuakeEngines</a>,
-      <a href="https://github.com/Justasic/RTCW-SP/network/members">Other forks</a></span>
-    <p>This is the Return to Castle Wolfenstein GPL open source release. This fork is intended to provide many bug fixes
-      and improvements over the original release of the game as well as import fixes from…</p>
+      <a href="https://techgaun.github.io/active-forks/index.html#Justasic/RTCW-SP">Other forks</a></span>
+    <p>This is the Return to Castle Wolfenstein GPL open source release. This fork is intended to provide many bug
+      fixes and improvements over the original release of the game as well as import fixes from…</p>
 
 
     <h3><a href="https://github.com/rtcwcoop/rtcwcoop">rtcwcoop</a> [rtcwcoop/rtcwcoop]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/rtcwcoop">QuakeEngines</a>,
-      <a href="https://github.com/rtcwcoop/rtcwcoop/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#rtcwcoop/rtcwcoop">Other forks</a></span><br>
+    <span class="subtext">Official website: <a href="http://www.rtcwcoop.com/">rtcwcoop.com</a></span>
     <p>A Return to Castle Wolfenstein modification which enables cooperative gameplay, based on iortcw</p>
 
 
+    <h3><a href="https://sourceforge.net/p/xreal/ET-XreaL/ci/master/tree/">ET-XreaL</a> @sourceforge [xreal/ET-XreaL]
+    </h3>
+    <span class="subtext">Unofficial mirror on github:
+      <a href="https://github.com/QuakeEngines/ET-XreaL">QuakeEngines/ET-XreaL</a></span>
+    <p>ET:XreaL is a subproject bringing all XreaL enhancements to Return to Castle Wolfenstein: Enemy Territory.</p>
 
-    <h3><a href="https://github.com/QuakeEngines/ET-XreaL">ET-XreaL</a></h3>
-    <p>Clone of ET-XreaL project (XreaL renderer for Wolfenstein: Enemy Territory)</p>
 
-
-    <h3><a href="https://sourceforge.net/p/openterritory/openterritory/ci/master/tree/">Open-Territory</a> @sourceforge
-      [openterritory/openterritory]</h3>
+    <h3><a href="https://sourceforge.net/p/openterritory/openterritory/ci/master/tree/">Open-Territory</a>
+      @sourceforge [openterritory/openterritory]</h3>
     <span class="subtext">Unofficial mirror on github: <a
         href="https://github.com/QuakeEngines/Open-Territory">QuakeEngines/Open-Territory</a></span>
-    <p>Clone of Open Territory project (based on the Wolfenstein: Enemy Territory)
-    </p>
+    <p>A World War Two shooter based on the GPL’d Wolfenstein: Enemy Territory source code.</p>
 
-    <h3><a href="https://sourceforge.net/p/openterritory/etmain/ci/master/tree/">Open-Territory-etmain</a> @sourceforge
+
+    <h3><a href="https://sourceforge.net/p/openterritory/etmain/ci/master/tree/">Open-Territory-etmain</a>
+      @sourceforge
       [openterritory/etmain]</h3>
     <span class="subtext">Unofficial mirror on github: <a
         href="https://github.com/QuakeEngines/Open-Territory-etmain">QuakeEngines/Open-Territory-etmain</a></span>
     <p>Open Territory / etmain folder</p>
 
 
-    <h3><a href="https://github.com/thunderpwn/Tremulous">OpenWolf-Engine / Tremolous</a> [thunderpwn/Tremulous]</h3>
-    <span class="subtext">Mirrors: <a
-        href="https://github.com/QuakeEngines/OpenWolf-Engine">QuakeEngines/OpenWolf-Engine</a>,
-      <a href="https://github.com/thunderpwn/Tremulous/network/members">Other forks</a></span>
+    <h3><a href="https://github.com/QuakeEngines/OpenWolf-Engine">OpenWolf-Engine</a> [QuakeEngines/OpenWolf-Engine]
+    </h3>
+    <span class="subtext">Original source on sourceforge:
+      <a href="https://sourceforge.net/projects/open-wolf/">open-wolf</a> (currently unavailable)</span><br>
+    <span class="subtext">Mirrors: <a href="https://github.com/illwieckz/OpenWolf-Engine">illwieckz/OpenWolf-Engine</a>,
+      <a href="https://github.com/thunderpwn/Tremulous">thunderpwn/Tremulous</a>,
+      <a href="https://techgaun.github.io/active-forks/index.html#thunderpwn/Tremulous">Other forks</a></span>
     <p>Heavy modified idTech3 engine</p>
 
-    <h3><a href="https://github.com/QuakeEngines/OpenWolf-main">OpenWolf-main</a></h3>
-    <p>TheDushan/OpenWolf-Engine/main folder (aka nexTrem-assets)</p>
 
-    <h3><a href="https://github.com/QuakeEngines/OpenWolf-main-textures">OpenWolf-main-textures</a></h3>
+    <h3><a href="https://github.com/QuakeEngines/OpenWolf-main">OpenWolf-main</a> [QuakeEngines/OpenWolf-main]</h3>
+    <span class="subtext">Original source on sourceforge:
+      <a href="https://sourceforge.net/projects/open-wolf/">open-wolf</a> (currently unavailable)</span><br>
+    <p>TheDushan/OpenWolf-Engine/main folder (aka nexTrem-assets)</p>
+    <span class="subtext">Original source on sourceforge:
+      <a href="https://sourceforge.net/projects/open-wolf/">open-wolf</a> (currently unavailable)</span><br>
+    <h3><a href="https://github.com/QuakeEngines/OpenWolf-main-textures">OpenWolf-main-textures</a>
+      [OpenWolf-main-textures]</h3>
     <p>TheDushan/OpenWolf-Engine/main/textures folder</p>
 
 
 
+
+    <!--
+    <h2>Quake 4 /Doom 3</h2>
+
+    
+    <h3><a href="https://github.com/tankorsmash/quadcow">quadcow</a> [tankorsmash/quadcow]</h3>
+    <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/quadcow">QuakeEngines</a>,
+      <a href="https://techgaun.github.io/active-forks/index.html#tankorsmash/quadcow">Other forks</a></span>
+    <p>Unofficial Github host for the recently open source Quadrilateral Cowboy</p>
+
+-->
 
 
 
 
 
     <hr>
-    <h2>Half-life engines:</h2>
+    <h2>Half-life:</h2>
 
 
-    <h3><a href="https://github.com/Solokiller/halflife-updated">halflife-updated</a> [Solokiller/halflife-updated]</h3>
-    <span class="subtext">Mirrors: <a
-        href="https://github.com/QuakeEngines/halflife-sdk-vs2019">QuakeEngines/halflife-sdk-vs2019</a>,
-      <a href="https://github.com/Solokiller/halflife-updated/network/members">Other forks</a></span>
+    <h3><a href="https://github.com/Solokiller/halflife-updated">halflife-updated</a> [Solokiller/halflife-updated]
+    </h3>
+    <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/halflife-updated">QuakeEngines</a>,
+      <a href="https://techgaun.github.io/active-forks/index.html#Solokiller/halflife-updated">Other forks</a></span>
     <p>Half-Life SDK updated to compile under VS2019</p>
 
 
     <h3><a href="https://github.com/Solokiller/HLEnhanced">HLEnhanced</a> [Solokiller/HLEnhanced]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/HLEnhanced">QuakeEngines</a>,
-      <a href="https://github.com/Solokiller/HLEnhanced/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#Solokiller/HLEnhanced">Other forks</a></span>
     <p>Half-Life Enhanced. Vanilla SDK with improvements. No longer maintained, will be replaced by SharpLife.</p>
 
     <h3><a href="https://github.com/Solokiller/half-life-better-weapons">half-life-better-weapons</a>
       [Solokiller/half-life-better-weapons]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/half-life-better-weapons">QuakeEngines</a>,
-      <a href="https://github.com/Solokiller/half-life-better-weapons/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#Solokiller/half-life-better-weapons">Other
+        forks</a></span>
     <p>Better weapons code for Half-Life</p>
 
 
     <h3><a href="https://github.com/Solokiller/halflife-op4">halflife-op4</a> [Solokiller/halflife-op4]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/halflife-op4">QuakeEngines</a>,
-      <a href="https://github.com/Solokiller/halflife-op4/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#Solokiller/halflife-op4">Other forks</a></span>
     <p>Half-Life SDK with Opposing Force code</p>
 
 
     <h3><a href="https://github.com/s1lentq/ReGameDLL_CS">ReGameDLL_CS</a> [s1lentq/ReGameDLL_CS]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/ReGameDLL_CS">QuakeEngines</a>,
-      <a href="https://github.com/s1lentq/ReGameDLL_CS/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#s1lentq/ReGameDLL_CS">Other forks</a></span>
     <p>🔨 Reverse-engineered gamedll (CS 1.6 / CZero)</p>
 
 
 
     <h3><a href="https://github.com/Solokiller/czeror-sdk">czeror-sdk</a> [Solokiller/czeror-sdk]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/czeror-sdk">QuakeEngines</a>,
-      <a href="https://github.com/Solokiller/czeror-sdk/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#Solokiller/czeror-sdk">Other forks</a></span>
     <p>Condition Zero Deleted Scenes SDK</p>
 
 
@@ -456,7 +513,7 @@
 
     <h3><a href="https://github.com/Solokiller/halflife-fog">halflife-fog</a> [Solokiller/halflife-fog]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/halflife-fog">QuakeEngines</a>,
-      <a href="https://github.com/Solokiller/halflife-fog/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#Solokiller/halflife-fog">Other forks</a></span>
     <p>Half-Life SDK with env_fog implemented</p>
 
 
@@ -469,44 +526,52 @@
     <hr>
     <h2>Map editors:</h2>
 
-
-
+    <h3><a href="https://github.com/kduske/TrenchBroom">TrenchBroom</a> [kduske/TrenchBroom]</h3>
+    <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/TrenchBroom">QuakeEngines</a>,
+      <a href="https://techgaun.github.io/active-forks/index.html#kduske/TrenchBroom">Other forks</a></span><br>
+    <span class="subtext">Official website:
+      <a href="http://kristianduske.com/trenchbroom">kristianduske.com/trenchbroom</a> /
+      Official Discord channel: <a href="https://discord.gg/n7K8Cps">TrenchBroom</a></span>
+    <p>Cross-Platform Level Editor http://kristianduske.com/trenchbroom</p>
 
     <h3><a href="https://gitlab.com/xonotic/netradiant">netradiant</a> @gitlab [xonotic/netradiant]</h3>
     <span class="subtext">Unofficial mirror on github: <a
-        href="https://github.com/QuakeEngines/netradiant-clone">QuakeEngines/netradiant-clone</a></span></h3>
+        href="https://github.com/QuakeEngines/netradiant-clone">QuakeEngines/netradiant-clone</a></span><br>
+    <span class="subtext">Official website: <a href="https://netradiant.gitlab.io/">netradiant.gitlab.io</a></span>
     <p>The open source, cross platform level editor for idtech games (GtkRadiant fork) - https://netradiant.gitlab.io
     </p>
 
-
     <h3><a href="https://github.com/Garux/netradiant-custom">netradiant-custom</a> [Garux/netradiant-custom]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/netradiant-custom">QuakeEngines</a>,
-      <a href="https://github.com/Garux/netradiant-custom/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#Garux/netradiant-custom">Other forks</a></span>
     <p>The open-source, cross-platform level editor for id Tech based games.</p>
 
 
     <h3><a href="https://github.com/TTimo/GtkRadiant">GtkRadiant</a> [TTimo/GtkRadiant]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/GtkRadiant">QuakeEngines</a>,
-      <a href="https://github.com/TTimo/GtkRadiant/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#TTimo/GtkRadiant">Other forks</a></span><br>
+    <span class="subtext">Official website: <a href="https://icculus.org/gtkradiant/">icculus.org/gtkradiant</a></span>
     <p>The open source, cross platform level editor for idtech games</p>
 
 
     <h3><a href="https://github.com/codereader/DarkRadiant">DarkRadiant</a> [codereader/DarkRadiant]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/DarkRadiant">QuakeEngines</a>,
-      <a href="https://github.com/codereader/DarkRadiant/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#codereader/DarkRadiant">Other forks</a></span><br>
+    <span class="subtext">Official website: <a href="https://www.darkradiant.net/">darkradiant.net</a></span>
     <p>DarkRadiant is the map editor for The Dark Mod and other idTech4/Doom3-based games</p>
 
 
     <h3><a href="https://github.com/LogicAndTrick/sledge">sledge</a> [LogicAndTrick/sledge]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/sledge">QuakeEngines</a>,
-      <a href="https://github.com/LogicAndTrick/sledge/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#LogicAndTrick/sledge">Other forks</a></span><br>
+    <span class="subtext">Official website:
+      <a href="https://logicandtrick.github.io/sledge/">logicandtrick.github.io/sledge</a></span>
     <p>An open source alternative to Valve's Hammer Editor for the Goldsource engine. (No longer in development)</p>
-
 
 
     <h3><a href="https://github.com/LogicAndTrick/sledge-formats">sledge-formats</a> [LogicAndTrick/sledge-formats]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/sledge-formats">QuakeEngines</a>,
-      <a href="https://github.com/LogicAndTrick/sledge-formats/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#LogicAndTrick/sledge-formats">Other forks</a></span>
     <p>C# parsers and formats for Half-Life 1 and related engines.</p>
 
 
@@ -516,58 +581,73 @@
     <hr>
     <h2>Other tools:</h2>
 
-
-
     <h3><a href="https://github.com/SomaZ/Blender_BSP_Importer">Blender_BSP_Importer</a> [SomaZ/Blender_BSP_Importer]
     </h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/Blender_BSP_Importer">QuakeEngines</a>,
-      <a href="https://github.com/SomaZ/Blender_BSP_Importer/network/members">Other forks</a></span>
-    <p>This is a quake 3 bsp importer for blender. It also tries to import enitites and tries to convert quake 3 shaders
-      to eevee ones. Currently supported games are Jedi Knight 2 and Jedi Academy. Other …</p>
+      <a href="https://techgaun.github.io/active-forks/index.html#SomaZ/Blender_BSP_Importer">Other forks</a></span>
+    <p>This is a quake 3 bsp importer for blender. It also tries to import enitites and tries to convert quake 3
+      shaders to eevee ones. Currently supported games are Jedi Knight 2 and Jedi Academy. Other …</p>
 
 
     <h3><a href="https://github.com/multiplay/qstat">qstat</a> [multiplay/qstat]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/qstat">QuakeEngines</a>,
-      <a href="https://github.com/multiplay/qstat/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#multiplay/qstat">Other forks</a></span>
     <p>New official qstat repository</p>
 
 
 
     <h3><a href="https://github.com/XQF/xqf">xqf</a> [XQF/xqf]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/xqf">QuakeEngines</a>,
-      <a href="https://github.com/XQF/xqf/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#XQF/xqf">Other forks</a></span>
     <p>XQF game server browser</p>
 
 
 
     <h3><a href="https://github.com/LogicAndTrick/HLView">HLView</a> [LogicAndTrick/HLView]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/HLView">QuakeEngines</a>,
-      <a href="https://github.com/LogicAndTrick/HLView/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#LogicAndTrick/HLView">Other forks</a></span>
     <p>A viewer for everything in your Half-Life game folder</p>
 
 
     <h3><a href="https://github.com/illwieckz/mkeditorpacks">mkeditorpacks</a> [illwieckz/mkeditorpacks]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/mkeditorpacks">QuakeEngines</a>,
-      <a href="https://github.com/illwieckz/mkeditorpacks/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#illwieckz/mkeditorpacks">Other forks</a></span>
     <p>Make map editor game packs from a common source tree</p>
 
 
     <h3><a href="https://github.com/illwieckz/q3map2_helper">q3map2_helper</a> [illwieckz/q3map2_helper]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/q3map2_helper">QuakeEngines</a>,
-      <a href="https://github.com/illwieckz/q3map2_helper/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#illwieckz/q3map2_helper">Other forks</a></span>
     <p></p>
 
 
     <h3><a href="https://github.com/illwieckz/pimi">pimi</a> [illwieckz/pimi]</h3>
     <span class="subtext">Mirrors: <a href="https://github.com/QuakeEngines/pimi">QuakeEngines</a>,
-      <a href="https://github.com/illwieckz/pimi/network/members">Other forks</a></span>
+      <a href="https://techgaun.github.io/active-forks/index.html#illwieckz/pimi">Other forks</a></span>
     <p>A shell script to install popular IdTech mods</p>
 
 
+    <hr>
+    <h2><a name="comments" class="grey">Comments:</a></h3>
+      <div id="disqus_thread"></div>
+      <script>
+        var disqus_config = function () {
+          this.page.url = "http://QuakeEngines.github.io/";
+          this.page.identifier = "index";
+        };
 
-
-
+        (function () { // DON'T EDIT BELOW THIS LINE
+          var d = document,
+            s = d.createElement('script');
+          s.src = 'https://quakeengines.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+          Disqus.</a></noscript>
   </div>
+  <div class="footer"></div>
 </body>
 
 </html>
