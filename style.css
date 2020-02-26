@@ -60,6 +60,16 @@ h3 {
 
 }
 
+h4 {
+
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 28px;
+  margin-bottom: 8px;
+
+}
+
+
 .subtext {
   font-size: 12px;
   font-weight: normal;
