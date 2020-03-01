@@ -60,6 +60,10 @@ h3 {
 
 }
 
+h3 a {
+  text-decoration: none;
+}
+
 h4 {
 
   font-weight: 600;
@@ -69,11 +73,67 @@ h4 {
 
 }
 
+h4 a {
+  text-decoration: none;
+}
+
 
 .subtext {
   font-size: 12px;
   font-weight: normal;
 }
+
+.collapsible {
+  cursor: pointer;
+  text-decoration: solid;
+  margin-top: 60px;
+}
+
+.collapsible::before {
+  content: "⯈ ";
+}
+
+.active::before {
+  content: "⯆ ";
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+hr {
+  margin-top: 30px;
+}
+
+/* 
+input {
+  display: none;
+  visibility: hidden;
+}
+
+label::after {
+  margin-left: 10px;
+  content: "⯅";
+}
+
+#expand {
+  height: auto;
+}
+
+
+#toggle:checked~#expand {
+  max-height: 0;
+  overflow: hidden;
+  transition: height 0.5s; 
+  transition: max-height 0.2s ease-out;
+}
+
+#toggle:checked~label::after {
+  content: "⯆";
+} 
+*/
 
 ::-webkit-scrollbar {
   background-color: #353637 !important;
