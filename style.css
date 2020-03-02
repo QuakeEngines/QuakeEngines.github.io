@@ -15,7 +15,7 @@ body {
 #main-div {
   margin: auto;
   max-width: 700px;
-  padding-top: 20px;
+  padding: 20px 5px 10px 5px;
 }
 
 #menu-div,
@@ -24,7 +24,7 @@ body {
 }
 
 .footer {
-  min-height: 80px;
+  min-height: 60px;
 }
 
 a {
