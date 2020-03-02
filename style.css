@@ -3,8 +3,6 @@ html {
   background-color: rgb(40, 40, 40);
 }
 
-
-
 body {
   color: rgb(190, 190, 190);
   background-color: rgb(40, 40, 40);
@@ -14,16 +12,16 @@ body {
   margin: 0px;
 }
 
-div {
+#main-div {
   margin: auto;
   max-width: 700px;
+  padding-top: 20px;
 }
 
 #menu-div,
 #input-div {
   margin-top: 30px;
 }
-
 
 .footer {
   min-height: 80px;
@@ -46,23 +44,47 @@ span a,
   color: rgb(190, 190, 190);
 }
 
-.right {
-  float: right;
-  margin-top: 5px;
+#input-div {
+  display: flex;
 }
 
+.left {
+  width: 100%;
+}
+
+.right {
+  min-width: fit-content;
+  margin-top: 5px;
+  padding-left: 10px;
+}
 
 input {
-  border: solid 1px #ccc;
+  border: solid 1px #777;
   background-color: #323334;
-  height: 20px;
+  height: 30px;
   font-size: 15px;
   color: rgb(190, 190, 190);
   padding: 4px 6px 4px 6px;
-  border-radius: 4px;
-  width: 500px;
+  border-radius: 3px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
+
+.subtext {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+
+.hr {
+  min-height: 1px;
+  width: 100%;
+  background-color: #888;
+  border: 0 none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
 
 h1 {
@@ -109,11 +131,7 @@ h4 a {
 }
 
 
-.subtext {
-  font-size: 12px;
-  font-weight: normal;
-}
-
+/* Collapsible sections */
 .collapsible {
   cursor: pointer;
   text-decoration: solid;
@@ -134,60 +152,7 @@ h4 a {
   transition: max-height 0.5s;
 }
 
-hr {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  background-color: #ccc;
-  border: 0 none;
-  color: #ccc;
-  height: 1px;
-}
 
-/* 
-input {
-  display: none;
-  visibility: hidden;
-}
-
-label::after {
-  margin-left: 10px;
-  content: "⯅";
-}
-
-#expand {
-  height: auto;
-}
-
-
-#toggle:checked~#expand {
-  max-height: 0;
-  overflow: hidden;
-  transition: height 0.5s; 
-  transition: max-height 0.2s ease-out;
-}
-
-#toggle:checked~label::after {
-  content: "⯆";
-} 
-*/
-
-::-webkit-scrollbar {
-  background-color: #353637 !important;
-  color: #b4b1ab;
-}
-
-::-webkit-scrollbar-corner {
-  background-color: #323334 !important;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #3f4142 !important;
-}
-
-::selection {
-  background-color: #2065b9;
-  color: #dfdfdf;
-}
 
 /* Tooltip container */
 .tooltip {
@@ -217,4 +182,24 @@ label::after {
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+
+/* scrollbar style */
+::-webkit-scrollbar {
+  background-color: #353637 !important;
+  color: #b4b1ab;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #323334 !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3f4142 !important;
+}
+
+::selection {
+  background-color: #2065b9;
+  color: #dfdfdf;
 }

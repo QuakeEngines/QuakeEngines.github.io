@@ -3,7 +3,7 @@ function filterRepo() {
   var input, filter, ul, item, a, i, txtValue;
   input = document.getElementById("filter-repo");
   filter = input.value.toUpperCase();
-  div = document.getElementById("maindiv");
+  div = document.getElementById("main-div");
   item = div.getElementsByClassName("item");
 
   // change display state of every item

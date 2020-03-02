@@ -26,6 +26,10 @@
   urtdevs/UrTDevs-Client
   Solokiller/HLEnhanced-Game
   JACoders/OpenJK
+  m-x-d/Simple-Quake-Launcher-2
+  m-x-d/Mission64-src
+  m-x-d/Mission64-data
+
 
   sort out:
   link on original https://github.com/id-Software/Enemy-Territory (ETe)
@@ -33,6 +37,7 @@
   link on original id-Software/RTCW-SP (Justasic/RTCW-SP)
   OpenArena/engine (ioq3)
   https://github.com/Irbyz/aftershock-xe (oaunofficial)
+    also compare with zturtleman/oaunofficial
   https://github.com/Azarien/SoftQuake (id-Software/quake)
   https://github.com/leilei-/Engoo  (id-Software/quake)
   https://github.com/pelya/openarena-engine (undeadzy/openarena_engine)
@@ -59,13 +64,13 @@ Blank template:
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="lTvQJr_WSsVCTfbjiyG99q1WVXBGjPsmyoc5Z2Spa2A" />
   <title>Quake Engines List</title>
-  <link rel="stylesheet" type="text/css" href="style.css?random=17">
+  <link rel="stylesheet" type="text/css" href="style.css?random=23">
 </head>
 
 <body>
 
 
-  <div id="maindiv">
+  <div id="main-div">
     <h1>The Big List of Quake Engines</h1>
     <p style="font-size: 12px;">Web page: <b><a href="https://QuakeEngines.github.io"
           class="grey">QuakeEngines.github.io</a></b> /
@@ -80,8 +85,9 @@ Blank template:
 
     <p>This is list of github repositories of <b>idTech</b> engines, it's derivatives and sourceports. It also includes
       repos of some of the <b>games and mods</b> based on Quake and Quake-related engines. This is not a complete list,
-      and it is gradually expanding and updating. There are mirrors of included repos on github.com/QuakeEngines made
-      for archiving purposes. They are periodically updated by "merge and rebase" with their original source repos.<br>
+      and it is gradually expanding and updating. There are mirrors of included repos on
+      <a href="https://github.com/QuakeEngines" class="grey">github.com/QuakeEngines</a> made for archiving purposes.
+      They are periodically updated by "merge and rebase" with their original source repos.<br>
       Also check out <b>"Other forks"</b> link for each item, leading to JS app, which can sort forks by popularity.<br>
       Please post your suggestions and fixes on gihub
       <a href="https://github.com/QuakeEngines/QuakeEngines.github.io/issues" class="grey">issues</a> page or in the
@@ -98,15 +104,19 @@ Blank template:
     </div>
 
     <div id="input-div">
-      <input type="text" id="filter-repo" onkeyup="filterRepo()" placeholder="Find a repository...">
-      <span class="right"><a href="#" onclick="expandAll()"
+      <div class="left">
+        <input type="text" id="filter-repo" onkeyup="filterRepo()" placeholder="Find a repository...">
+      </div>
+      <div class="right"><a href="#" onclick="expandAll()" class="grey"
           title="Expand every 'Mods and games' sections below. Not necessary for filter/search functionality">Expand
-          all hidden sections</a></span>
+          all hidden sections</a>
+      </div>
+
     </div>
 
 
     <div class="section-title">
-      <hr>
+      <div class="hr"></div>
       <h2><a name="quake1">Quake 1:</a></h2>
     </div>
 
@@ -225,7 +235,7 @@ Blank template:
 
 
     <div class="section-title">
-      <hr>
+      <div class="hr"></div>
       <h2><a name="quake2">Quake 2:</a></h2>
     </div>
 
@@ -348,7 +358,7 @@ Blank template:
 
 
     <div class="section-title">
-      <hr>
+      <div class="hr"></div>
       <h2><a name="quake3">Quake 3:</a></h2>
     </div>
 
@@ -634,7 +644,7 @@ Blank template:
 
 
     <div class="section-title">
-      <hr>
+      <div class="hr"></div>
       <h2><a name="rtcw-et">RtCW / ET:</a></h2>
     </div>
 
@@ -796,7 +806,7 @@ Blank template:
 
 
     <div class="section-title">
-      <hr>
+      <div class="hr"></div>
       <h2><a name="half-life">Half-life:</a></h2>
     </div>
 
@@ -884,7 +894,7 @@ Blank template:
 
 
     <div class="section-title">
-      <hr>
+      <div class="hr"></div>
       <h2><a name="map-editors">Map editors:</a></h2>
     </div>
 
@@ -970,7 +980,7 @@ Blank template:
 
 
     <div class="section-title">
-      <hr>
+      <div class="hr"></div>
       <h2><a name="tools">Tools:</a></h2>
     </div>
 
@@ -1093,7 +1103,7 @@ Blank template:
 
 
     <div class="section-title">
-      <hr>
+      <div class="hr"></div>
       <h2><a name="comments" class="grey">Comments:</a></h3>
         <div id="disqus_thread"></div>
         <script>
