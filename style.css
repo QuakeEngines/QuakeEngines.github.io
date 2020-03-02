@@ -139,12 +139,16 @@ h4 a {
 }
 
 .collapsible::before {
-  content: "⯈ ";
+  content: "⏵";
+  padding-right: 3px;
 }
 
 .active::before {
-  content: "⯆ ";
+  content: "⏷";
+  padding-right: 3px;
 }
+
+
 
 .hidden {
   max-height: 0;
