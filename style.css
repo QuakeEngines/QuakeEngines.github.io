@@ -12,6 +12,7 @@ body {
   margin: 0px;
 }
 
+
 #main-div {
   margin: auto;
   max-width: 700px;
@@ -154,6 +155,29 @@ h4 a {
   transition: max-height 0.5s;
 }
 
+
+img {
+  max-width: 700px;
+  margin: 10px 0px;
+}
+
+.img:hover {
+  transition: all .3s;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.img1 {
+  min-height: 500;
+}
+
+.img2 {
+  min-height: 320;
+}
+
+.img3 {
+  min-height: 500;
+}
 
 
 /* Tooltip container */
