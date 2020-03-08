@@ -161,21 +161,25 @@ img {
   margin: 10px 0px;
 }
 
-.img:hover {
+img:hover {
   transition: all .3s;
   opacity: 1;
   transform: scale(1.2);
 }
 
-.img1 {
-  min-height: 500;
+#img1 {
+  min-height: 125;
 }
 
-.img2 {
+#img1:hover {
+  transform: none;
+}
+
+#img2 {
   min-height: 320;
 }
 
-.img3 {
+#img3 {
   min-height: 500;
 }
 
