@@ -90,7 +90,7 @@ function jumpTo(h) {
   hidden_div.style.maxHeight = hidden_div.scrollHeight + "px";
   col.classList.add("active"); // switch arrow symbol direction
 
-  setTimeout(jumpTo2, 400, link_id); // 0.4s timeout before scroll
+  setTimeout(jumpTo2, 500, link_id); // 0.5s timeout before scroll
 
 }
 
