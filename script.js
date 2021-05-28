@@ -69,6 +69,7 @@ function expandAll() {
 
 }
 
+
 // collapse everything (when search input field cleared after search)
 function collapseAll() {
   var i, hiddenDivs, coll;
@@ -78,5 +79,21 @@ function collapseAll() {
     hiddenDivs[i].style.maxHeight = null;
     coll[i].classList.remove("active"); // switch arrow symbol direction
   }
+}
 
+function jumpTo(h) {
+  var div_id = h.split("/")[0]
+  var link_id = h.split("/")[1]
+  var hidden_div = document.getElementById(div_id); // hidden div itself
+  var col = document.getElementById(div_id + "_col"); // title with arrow
+
+  hidden_div.style.maxHeight = hidden_div.scrollHeight + "px";
+  col.classList.add("active"); // switch arrow symbol direction
+
+  setTimeout(jumpTo2, 400, link_id); // 0.4s timeout before scroll
+
+}
+
+function jumpTo2(h) {
+  window.location = ("" + window.location).replace(/#.*$/, '') + "#" + h; // remove previous #hash from url and redirect to new one
 }

@@ -339,10 +339,10 @@
       <p>Quake GPL Source Release</p>
     </div>
 
-    <h4 class="collapsible">Older engines...</h4>
+    <h4 class="collapsible" id="q1_old_col">Older engines...</h4>
 
 
-    <div class="hidden">
+    <div class="hidden" id="q1_old">
 
 
       <div class="item">
@@ -423,7 +423,7 @@
           <a href="https://techgaun.github.io/active-forks/index.html#DrLabman/Vengeance-r2">Other forks</a>
         </span><br>
         <span class="subtext">Official website: <a
-            href="http://web.archive.org/web/20110815180114/http://entar.quakedev.com/">web.archive.org/web/20110815180114/http://entar.quakedev.com</a>
+            href="http://web.archive.org/web/20110815180114/http://entar.quakedev.com/">web.archive.org/.../entar.quakedev.com</a>
         </span><br>
         <p>Vengeance r2 - Quake Engine Source Modification. Enhanced, scriptable Particle System,
           GLSL Per-pixel lighting, Improved file format support including: MD2, MD3, Half-Life BSP, PK3...</p>
@@ -441,7 +441,6 @@
         </span><br>
         <p>Quake sourceport based on JoeQuake and QMB</p>
       </div>
-
 
 
       <div class="item">
@@ -462,7 +461,7 @@
     <h4 class="collapsible lower-margin">Mods and games...</h4>
 
 
-    <div class=" hidden">
+    <div class=" hidden" id="q1_mods">
 
 
       <div class="item">
@@ -603,7 +602,9 @@
       <span class="subtext">Official website: <a href="http://quetoo.org/">Quetoo.org</a> /
         Official Discord server: <a href="https://discord.gg/unb9U4b">Quetoo.org</a></span>
       <p>Quetoo ("Q2") is a free first person shooter based on id Tech2. GPL v2 license.</p>
-      <p>See also: <a href="#quetoo-data" class="grey">quetoo-data</a></p>
+      <p>See also: <a href="#" onclick="event.preventDefault();jumpTo('q2_mods/quetoo-data');"
+          class="grey">quetoo-data</a>
+      </p>
     </div>
 
 
@@ -662,10 +663,10 @@
     </div>
 
 
-    <h4 class="collapsible">Mods and games...</h4>
+    <h4 class="collapsible" id="q2_mods_col">Mods and games...</h4>
 
 
-    <div class="hidden">
+    <div class="hidden" id="q2_mods">
 
 
       <div class="item">
@@ -679,7 +680,8 @@
 
 
       <div class="item">
-        <h3><a href="https://github.com/jdolan/quetoo-data" name="quetoo-data">Quetoo-data</a> [jdolan/quetoo-data]</h3>
+        <h3><a href="https://github.com/jdolan/quetoo-data" name="quetoo-data">Quetoo-data</a>
+          [jdolan/quetoo-data]</h3>
         <span class="subtext">Mirrors: <a href="https://github.com/QuakeMods/quetoo-data">QuakeMods</a>,
           <a href="https://techgaun.github.io/active-forks/index.html#jdolan/quetoo-data">Other forks</a></span>
         <p>Quetoo ("Q2") game data. Creative Commons Attribution license.</p>
@@ -734,6 +736,8 @@
             forks</a></span>
         <p>This is the complete source of DDay: Normandy FPS. It is a Quake II total conversion.</p>
       </div>
+
+
     </div>
 
 
@@ -811,7 +815,8 @@
       <span class="subtext">Official website: <a href="http://www.openarena.ws/">www.openarena.ws</a> /
         Official Discord server: <a href="https://discord.gg/n3dTmzM">OpenArena</a></span><br>
       <p>OpenArena modifications to the ioquake3 engine http://openarena.ws</p>
-      <p>See also: <a href="#OpenArena_gamecode" class="grey">OpenArena/gamecode</a></p>
+      <p>See also: <a href="#" onclick="event.preventDefault();jumpTo('q3_mods/OpenArena_gamecode');"
+          class="grey">OpenArena/gamecode</a></p>
     </div>
 
 
@@ -833,7 +838,8 @@
       </span><br>
       <p>Its based on ioq3，I add a vulkan based modular render back end which originally from
         https://github.com/kennyalive/Quake-III-Arena-Kenny-Edition</p>
-      <p>See also: <a href="#vkOpenArena" class="grey">vkOpenArena</a></p>
+      <p>See also: <a href="#" onclick="event.preventDefault();jumpTo('q3_mods/vkOpenArena');"
+          class="grey">vkOpenArena</a></p>
     </div>
 
 
@@ -1052,7 +1058,8 @@
         <a href="https://techgaun.github.io/active-forks/index.html#briancullinan/planet_quake">Other forks</a>
       </span><br>
       <p>Combination of graphics and features from many different games.</p>
-      <p>See also: <a href="#planet_quake_data" class="grey">planet_quake_data</a></p>
+      <p>See also: <a href="#" onclick="event.preventDefault();jumpTo('q3_mods/planet_quake_data');"
+          class="grey">planet_quake_data</a></p>
     </div>
 
 
@@ -1069,10 +1076,10 @@
 
 
 
-    <h4 class=collapsible>Mods and games...</h4>
+    <h4 class=collapsible id="q3_mods_col">Mods and games...</h4>
 
 
-    <div class="hidden">
+    <div class="hidden" id="q3_mods">
 
 
 
@@ -1524,7 +1531,8 @@
       <span class="subtext">Unofficial mirror on github: <a
           href="https://github.com/QuakeEngines/Open-Territory">QuakeEngines/Open-Territory</a></span><br>
       <p>A World War Two shooter based on the GPL’d Wolfenstein: Enemy Territory source code.</p>
-      <p>See also: <a href="#Open-Territory-etmain" class="grey">Open-Territory-etmain</a></p>
+      <p>See also: <a href="#" onclick="event.preventDefault();jumpTo('rtcw_mods/Open-Territory-etmain');"
+          class="grey">Open-Territory-etmain</a></p>
     </div>
 
 
@@ -1560,8 +1568,10 @@
         <a href="https://techgaun.github.io/active-forks/index.html#QuakeEngines/OpenWolf-Engine-old">Other
           forks</a></span>
       <p>Heavy modified idTech3 engine.</p>
-      <p>See also: <a href="#OpenWolf-main" class="grey">OpenWolf-main</a>,
-        <a href="#OpenWolf-main-textures" class="grey">OpenWolf-main-textures</a></p>
+      <p>See also: <a href="#" onclick="event.preventDefault();jumpTo('rtcw_mods/OpenWolf-main');"
+          class="grey">OpenWolf-main</a>,
+        <a href="#" onclick="event.preventDefault();jumpTo('rtcw_mods/OpenWolf-main-textures');"
+          class="grey">OpenWolf-main-textures</a></p>
     </div>
 
 
@@ -1609,10 +1619,10 @@
 
 
 
-    <h4 class=collapsible>Mods and games...</h4>
+    <h4 class=collapsible id="rtcw_mods_col">Mods and games...</h4>
 
 
-    <div class="hidden">
+    <div class="hidden" id="rtcw_mods">
 
       <div class="item">
         <h3><a href="https://sourceforge.net/p/openterritory/etmain/ci/master/tree/"
@@ -1748,10 +1758,10 @@
     </div>
 
 
-    <h4 class=collapsible>Mods and games...</h4>
+    <h4 class=collapsible id="doom3_mods_col">Mods and games...</h4>
 
 
-    <div class="hidden">
+    <div class="hidden" id="doom3_mods">
 
       <div class="item">
         <h3><a href="https://svn.thedarkmod.com/publicsvn/darkmod_src/trunk/">The Dark Mod</a> @svn.thedarkmod.com
@@ -1917,10 +1927,10 @@
     </div>
 
 
-    <h4 class=collapsible>More map editors...</h4>
+    <h4 class=collapsible id="map_editors_col">More map editors...</h4>
 
 
-    <div class="hidden">
+    <div class="hidden" id="map_editors">
 
       <div class="item">
         <h3><a href="https://github.com/LogicAndTrick/sledge">Sledge</a> [LogicAndTrick/sledge]</h3>
@@ -2059,15 +2069,15 @@
     </div>
 
 
-    <h4 class=collapsible>More tools...</h4>
+    <h4 class=collapsible id="tools_col">More tools...</h4>
 
 
-    <div class="hidden">
+    <div class="hidden" id="tools">
 
 
 
 
-      <div class="item">
+      <div class=" item">
         <h3><a href="https://github.com/siliconemilk/q3map3">q3map3</a> [siliconemilk/q3map3]</h3>
         <span class="subtext">Mirrors: <a href="https://github.com/QuakeTools/q3map3">QuakeTools</a>,
           <a href="https://techgaun.github.io/active-forks/index.html#siliconemilk/q3map3">Other forks</a></span><br>
